@@ -8,6 +8,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background-color: black;
 }
 
 code {
@@ -42,12 +44,7 @@ label {
 
 .availability-slider {
   margin-bottom: 20px;
-}
-
-input[type="range"] {
-  width: 100%;
-}
-
+} 
 .availability-navigation {
   display: flex;
   justify-content: space-between;
@@ -68,11 +65,34 @@ button:hover {
 
 input, select, textarea {
   display: block;
-  width: 100%;
+  /* width: 100%; */
   margin: 10px 0;
+  /* color: black; */
 }
+
 
 button {
   display: block;
   margin: 10px 0;
+}
+
+ input{
+background: transparent;
+ }
+
+ input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #FFEDAC;
+  cursor: pointer;
+  height: 2px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  background: #FFEDAC;
+  height: 14px;
+  width: 14px;   
+  border-radius: 50%; 
 }
